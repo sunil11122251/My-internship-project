@@ -166,7 +166,8 @@ C:\xampp\htdocs\internship-task3\
 
 ## 👨‍💻 Author
 
-**Name:** Sunil
-**Internship:** ApexPlanet Software Pvt Ltd
-**Duration:** 45 Days (PHP & MySQL)
+* **Name:** Sunil
+* **Internship:** ApexPlanet Software Pvt Ltd
+* **Duration:** 45 Days (PHP & MySQL)
+
 
