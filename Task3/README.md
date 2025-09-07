@@ -1,59 +1,64 @@
-🟢 ApexPlanet Internship – Task 3
-📌 Task: Advanced Features Implementation
+# 🟢 ApexPlanet Internship – Task 3
 
-This is Task 3 of the ApexPlanet 45-Day Web Development Internship (PHP & MySQL).
-The goal of this task is to enhance the blog application from Task 2 with advanced features like search, pagination, role-based access control (Admin/User), and UI improvements.
+![PHP](https://img.shields.io/badge/PHP-7.4-blue?logo=php\&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-green?logo=mysql\&logoColor=white)
+![Task 3](https://img.shields.io/badge/Task-3-brightgreen)
 
-✅ Features
+## 📌 Task: Advanced Features Implementation
 
-🛡 Role-Based Access Control (RBAC)
+This is **Task 3** of the **ApexPlanet 45-Day Web Development Internship (PHP & MySQL)**.
+The goal is to **enhance the blog application from Task 2** with:
 
-Admin: Can view, edit, delete all posts
+* **Search posts** by title/content
+* **Pagination** for post listing
+* **Role-based access control** (Admin/User)
+* **Improved UI with Bootstrap & Custom CSS**
 
-User: Can create posts and manage only their own posts
+---
 
-✏️ CRUD Post Management
+## ✅ Features
 
-Create Post – Add new posts
+**🛡 Role-Based Access Control (RBAC)**
 
-Read Post – View posts with pagination
+* **Admin:** Can view, edit, delete **all posts**
+* **User:** Can create posts and manage **only their own posts**
 
-Update Post – Edit posts (role-based)
+**✏️ CRUD Post Management**
 
-Delete Post – Delete posts (role-based)
+* **Create Post** – Add new posts
+* **Read Post** – View posts with **pagination**
+* **Update Post** – Edit posts (**role-based**)
+* **Delete Post** – Delete posts (**role-based**)
 
-🔎 Search Functionality
+**🔎 Search Functionality**
 
-Search posts by title or content
+* Search posts by **title** or **content**
+* Display results dynamically
+* Implemented using **prepared statements for security**
 
-Display results dynamically
+**📄 Pagination**
 
-Implemented using prepared statements for security
+* Display **5 posts per page**
+* Navigation using **Previous / Next buttons** and **page numbers**
 
-📄 Pagination
+**🎨 User Interface Improvements**
 
-Display 5 posts per page
+* Clean layout using **Bootstrap 5 + Custom CSS**
+* Styled buttons, forms, cards, and messages for **better UX**
 
-Navigation using Previous / Next buttons and page numbers
+**🔒 Security Enhancements**
 
-🎨 User Interface Improvements
+* Prevent **SQL Injection** with prepared statements
+* Session management for **authenticated access**
+* Password hashing using `password_hash()`
 
-Clean layout using Bootstrap 5 + Custom CSS
+---
 
-Styled buttons, forms, cards, and messages for better UX
+## ⚡ Database Setup
 
-🔒 Security Enhancements
+Run these SQL commands in **phpMyAdmin** (`http://localhost/phpmyadmin/`):
 
-Prevent SQL Injection with prepared statements
-
-Session management for authenticated access
-
-Password hashing using password_hash()
-
-⚡ Database Setup
-
-Run these SQL commands in phpMyAdmin (http://localhost/phpmyadmin/):
-
+```sql
 CREATE DATABASE blog;
 
 USE blog;
@@ -75,8 +80,13 @@ CREATE TABLE posts (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (username) REFERENCES users(username) ON DELETE CASCADE
 );
+```
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
+
+```
 internship-task3/
 │── config.php      # Database connection + session start
 │── register.php    # User Registration
@@ -89,30 +99,38 @@ internship-task3/
 │── style.css       # Custom CSS for UI
 │── blog.sql        # Database schema + sample data
 │── README.md       # Documentation
+```
 
-🚀 How to Run
+---
 
-Copy the internship-task3/ folder to XAMPP htdocs:
+## 🚀 How to Run
 
+1. Copy the `internship-task3/` folder to **XAMPP `htdocs`**:
+
+```
 C:\xampp\htdocs\internship-task3\
+```
 
+2. Start **Apache** and **MySQL** from XAMPP Control Panel.
 
-Start Apache and MySQL from the XAMPP Control Panel.
+3. Open **phpMyAdmin**, create the **blog database**, and import `blog.sql`.
 
-Open phpMyAdmin, create the blog database, and import blog.sql.
+4. Open your browser and test the application:
 
-Open your browser and test the application:
+* **Register a new user**:
+  👉 `http://localhost/internship-task3/register.php`
 
-Register a new user:
-👉 http://localhost/internship-task3/register.php
+* **Login as Admin/User**:
+  👉 `http://localhost/internship-task3/login.php`
 
-Login as Admin/User:
-👉 http://localhost/internship-task3/login.php
+* **Dashboard with search, pagination, and post management**:
+  👉 `http://localhost/internship-task3/index.php`
 
-Dashboard with search, pagination, and post management:
-👉 http://localhost/internship-task3/index.php
+---
 
-🖼 Role-Based Workflow Diagram
+## 🖼 Role-Based Workflow Diagram
+
+```
         +----------------+
         |  Login Page    |
         | (Username +    |
@@ -138,17 +156,20 @@ Dashboard with search, pagination, and post management:
            CRUD Operations
        (Create, Read, Update, Delete)
        with Search + Pagination
+```
 
-📜 Deliverables
+---
 
-💾 Source code (index.php, login.php, register.php, edit.php, delete.php, etc.)
+## 📜 Deliverables
 
-🗄 Database schema (blog.sql)
+* **💾 Source code** (`index.php`, `login.php`, `register.php`, `edit.php`, `delete.php`, etc.)
+* **🗄 Database schema** (`blog.sql`)
+* **🎥 Screen recording demo** (shared on LinkedIn)
 
-🎥 Screen recording demo (shared on LinkedIn)
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Name: Sunil
-Internship: ApexPlanet Software Pvt Ltd
-Duration: 45 Days (PHP & MySQL)
+**Name:** Sunil
+**Internship:** ApexPlanet Software Pvt Ltd
+**Duration:** 45 Days (PHP & MySQL)
