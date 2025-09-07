@@ -1,65 +1,64 @@
-## 🟢 ApexPlanet Internship – Task 3
+🟢 ApexPlanet Internship – Task 3
+📌 Task: Advanced Features Implementation
 
-# 📌 Task: Advanced Features Implementation
+This is Task 3 of the ApexPlanet 45-Day Web Development Internship (PHP & MySQL).
+The goal of this task is to enhance the blog application from Task 2 with advanced features like search, pagination, role-based access control (Admin/User), and UI improvements.
 
-This is **Task 3** of the **ApexPlanet 45-Day Web Development Internship (PHP & MySQL)**.
-The goal of this task is to enhance the blog application from Task 2 with advanced features like search, pagination, role-based access control, and UI improvements.
-
-# ✅ Features
+✅ Features
 
 🛡 Role-Based Access Control (RBAC)
 
-- **Admin: Can view, edit, delete all posts**
+Admin: Can view, edit, delete all posts
 
-- **User: Can create posts and manage only their own posts**
+User: Can create posts and manage only their own posts
 
 ✏️ CRUD Post Management
 
-- **Create Post – Add new posts**
+Create Post – Add new posts
 
-- **Read Post – View posts with pagination**
+Read Post – View posts with pagination
 
-- **Update Post – Edit posts (role-based)**
+Update Post – Edit posts (role-based)
 
-- **Delete Post – Delete posts (role-based)**
+Delete Post – Delete posts (role-based)
 
 🔎 Search Functionality
 
-- **Search posts by title or content**
+Search posts by title or content
 
-- **Display results dynamically**
+Display results dynamically
 
-- **Implemented using prepared statements for security**
+Implemented using prepared statements for security
 
 📄 Pagination
 
-- **Display 5 posts per page**
+Display 5 posts per page
 
-- **Navigation using Previous / Next buttons and page numbers**
+Navigation using Previous / Next buttons and page numbers
 
-- **🎨 User Interface Improvements**
+🎨 User Interface Improvements
 
-- **Clean layout with Bootstrap 5 + Custom CSS**
+Clean layout using Bootstrap 5 + Custom CSS
 
-- **Styled buttons, forms, cards, and messages for better UX**
+Styled buttons, forms, cards, and messages for better UX
 
 🔒 Security Enhancements
 
-- **Prevent SQL Injection with prepared statements**
+Prevent SQL Injection with prepared statements
 
-- **Session management for authenticated access**
+Session management for authenticated access
 
-- **Password hashing using password_hash()**
+Password hashing using password_hash()
 
 ⚡ Database Setup
 
-Run these SQL commands in phpMyAdmin:
+Run these SQL commands in phpMyAdmin (http://localhost/phpmyadmin/):
 
 CREATE DATABASE blog;
 
 USE blog;
 
-# -- Users table
+-- Users table
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -67,7 +66,7 @@ CREATE TABLE users (
     role ENUM('admin','user') DEFAULT 'user'
 );
 
-# -- Posts table
+-- Posts table
 CREATE TABLE posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
@@ -78,7 +77,6 @@ CREATE TABLE posts (
 );
 
 📂 Project Structure
-
 internship-task3/
 │── config.php      # Database connection + session start
 │── register.php    # User Registration
@@ -94,24 +92,25 @@ internship-task3/
 
 🚀 How to Run
 
-Copy **internship-task3/** folder to XAMPP htdocs:
+Copy the internship-task3/ folder to XAMPP htdocs:
 
 C:\xampp\htdocs\internship-task3\
 
-Start Apache and MySQL from XAMPP Control Panel.
+
+Start Apache and MySQL from the XAMPP Control Panel.
 
 Open phpMyAdmin, create the blog database, and import blog.sql.
 
-Test the application in your browser:
+Open your browser and test the application:
 
 Register a new user:
- 👉 http://localhost/internship-task3/register.php
+👉 http://localhost/internship-task3/register.php
 
 Login as Admin/User:
- 👉 http://localhost/internship-task3/login.php
+👉 http://localhost/internship-task3/login.php
 
 Dashboard with search, pagination, and post management:
- 👉 http://localhost/internship-task3/index.php
+👉 http://localhost/internship-task3/index.php
 
 🖼 Role-Based Workflow Diagram
         +----------------+
@@ -152,8 +151,4 @@ Dashboard with search, pagination, and post management:
 
 Name: Sunil
 Internship: ApexPlanet Software Pvt Ltd
-
 Duration: 45 Days (PHP & MySQL)
-
-
-
