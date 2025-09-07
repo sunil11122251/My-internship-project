@@ -1,9 +1,5 @@
 # 🟢 ApexPlanet Internship – Task 3
 
-![PHP](https://img.shields.io/badge/PHP-7.4-blue?logo=php\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-green?logo=mysql\&logoColor=white)
-![Task 3](https://img.shields.io/badge/Task-3-brightgreen)
-
 ## 📌 Task: Advanced Features Implementation
 
 This is **Task 3** of the **ApexPlanet 45-Day Web Development Internship (PHP & MySQL)**.
@@ -173,3 +169,4 @@ C:\xampp\htdocs\internship-task3\
 **Name:** Sunil
 **Internship:** ApexPlanet Software Pvt Ltd
 **Duration:** 45 Days (PHP & MySQL)
+
