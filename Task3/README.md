@@ -104,13 +104,13 @@ Open phpMyAdmin, create the blog database, and import blog.sql.
 Test the application in your browser:
 
 Register a new user:
-# 👉 http://localhost/internship-task3/register.php
+ 👉 http://localhost/internship-task3/register.php
 
 Login as Admin/User:
-# 👉 http://localhost/internship-task3/login.php
+ 👉 http://localhost/internship-task3/login.php
 
 Dashboard with search, pagination, and post management:
-# 👉 http://localhost/internship-task3/index.php
+ 👉 http://localhost/internship-task3/index.php
 
 🖼 Role-Based Workflow Diagram
         +----------------+
@@ -151,4 +151,5 @@ Dashboard with search, pagination, and post management:
 
 Name: Sunil
 Internship: ApexPlanet Software Pvt Ltd
+
 Duration: 45 Days (PHP & MySQL)
