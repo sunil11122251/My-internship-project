@@ -78,7 +78,19 @@ CREATE TABLE posts (
 );
 
 📂 Project Structure
+
+internship-task2/
+│── config.php      # Database connection + session
+│── register.php    # User Registration
+│── login.php       # User Login
+│── logout.php      # User Logout
+│── index.php       # List posts (Read)
+│── create.php      # Add Post
+│── edit.php        # Edit Post
+│── delete.php      # Delete Post
+│── README.md       # Documentation
 internship-task3/
+
 │── config.php      # Database connection + session start
 │── register.php    # User Registration
 │── login.php       # Login page with role selection
@@ -153,4 +165,5 @@ Name: Sunil
 Internship: ApexPlanet Software Pvt Ltd
 
 Duration: 45 Days (PHP & MySQL)
+
 
