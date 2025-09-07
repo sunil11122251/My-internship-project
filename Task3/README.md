@@ -79,17 +79,17 @@ CREATE TABLE posts (
 
 📂 Project Structure
 internship-task3/
-│── config.php      # **Database connection + session start**
-│── register.php    # **User Registration**
-│── login.php       # **Login page with role selection**
-│── logout.php      # **User Logout**
-│── index.php       # **Dashboard (Read posts + Search + Pagination)**
-│── create.php      # **Add Post**
-│── edit.php        # **Edit Post (role-based)**
-│── delete.php      # **Delete Post (role-based)**
-│── style.css       # **Custom CSS for UI**
-│── blog.sql        # **Database schema + sample data**
-│── README.md       # **Documentation**
+│── config.php      # Database connection + session start
+│── register.php    # User Registration
+│── login.php       # Login page with role selection
+│── logout.php      # User Logout
+│── index.php       # Dashboard (Read posts + Search + Pagination)
+│── create.php      # Add Post
+│── edit.php        # Edit Post (role-based)
+│── delete.php      # Delete Post (role-based)
+│── style.css       # Custom CSS for UI
+│── blog.sql        # Database schema + sample data
+│── README.md       # Documentation
 
 🚀 How to Run
 
@@ -153,3 +153,4 @@ Name: Sunil
 Internship: ApexPlanet Software Pvt Ltd
 
 Duration: 45 Days (PHP & MySQL)
+
